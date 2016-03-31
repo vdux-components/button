@@ -14,7 +14,7 @@ import omit from '@f/omit'
 
 const filterProps = omit([
   'ttPlacement', 'tooltip', 'ttSpace', 'hoverStyle', 'style',
-  'onMouseEnter', 'onMouseLeave', 'ttUi', 'ui', 'highlight', 'bgColor'
+  'onMouseEnter', 'onMouseLeave', 'ttUi', 'ui', 'highlight'
 ])
 
 /**
@@ -25,8 +25,8 @@ const filterProps = omit([
 
 function render ({props, state, local, children}) {
   const {
-    tooltip, ttPlacement, bgColor = 'primary', ui = Button,
-    ttUi = Tooltip, highlight = true, hoverStyle = {}, style = {}
+    tooltip, ttPlacement, ui = Button, ttUi = Tooltip,
+    highlight = true, hoverStyle = {}, style = {}
   } = props
 
   const {hover} = state
